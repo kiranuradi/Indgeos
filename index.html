@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ysabeau+Infant:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Ysabeau Infant', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px;
+            position: sticky;
+            top: 0%;
+            z-index: 1;
+        }
+
+        .navbar-icon {
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .navbar-icon .icon-bar.fa {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+            margin-bottom: 4px;
+            margin-left: 250px;
+        }
+
+        .navbar-menu {
+            display: flex;
+            list-style: none;
+            padding: 2%;
+            width: 800px;
+        }
+
+        .navbar-menu li {
+            margin-right: 20px;
+        }
+
+        .navbar-menu li a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 50px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 40px;
+            color: white;
+            padding: 3%;
+            margin-left: 22px;
+        }
+
+        .seconddiv1 {
+            background-color: #416bb8;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .matter {
+            margin-left: 70px;
+        }
+
+        #bulid {
+            color: white;
+            font-size: 15px;
+            padding-top: 80px;
+            font-weight: bold;
+        }
+
+        #ind {
+            color: white;
+            font-size: 50px;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        #ind1 {
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        #an {
+            color: white;
+            font-size: 18px;
+            margin-top: 80px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+        }
+
+        #an1 {
+            color: white;
+            font-size: 18px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+        }
+
+        #button2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #button2 {
+            height: 40px;
+            margin-top: 50px;
+            width: 150px;
+            background-color: #8D5A9E;
+            border: 0.5px solid white;
+            /* color:white; */
+            font-size: 20px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        #button2:hover {
+            border-color: aqua;
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+        #lastp1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            margin-top: 70px;
+            font-family: arial;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+        }
+
+        #head2 {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        #matter2 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 18;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+        }
+
+        #animi {
+            height: 400px;
+            width: 500px;
+            margin-right: 200px;
+            margin-top: 120px;
+        }
+
+        .page1 {
+            display: flex;
+            background-color: #416bb8;
+        }
+
+        .page2 {
+            margin-bottom: 20px;
+            width: 100vw;
+            background-color: white;
+
+        }
+
+        .seconddiv2 {
+            display: flex;
+        }
+
+        .img1 {
+            margin: auto;
+            margin-top: 80px;
+
+        }
+
+        .log {
+            margin-left: 150px;
+        }
+
+        .f {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            margin-top: 100px;
+            margin-left: 170px;
+            margin-bottom: 100px;
+            margin-right: 80px;
+        }
+
+        .page3 {
+            background-color: #EBF1FF;
+            width: 100vw;
+            height: 120vh;
+            display: flex;
+        }
+
+        .head3 {
+            font-size: 50px;
+            font-weight: bold;
+            margin-left: 110px;
+            margin-right: 110px;
+            margin-top: 110px;
+            padding-top: 40px;
+            color: rgba(0, 0, 0, 0.774);
+        }
+
+        #subhead3 {
+            color: deeppink;
+            font-weight: bold;
+            margin-left: 110px;
+            font-size: 30px;
+            margin-top: 70px;
+            color: rgba(0, 0, 0, 0.774);
+        }
+
+        #matter3 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            margin-left: 110px;
+            margin-top: 20px;
+            width: 500px;
+        }
+
+        #buttonf3 {
+            margin-top: 110px;
+            margin-left: 110px;
+            height: 40px;
+            width: 180px;
+            background-color: #8D5A9E;
+            border: none;
+            font-size: 17px;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        .seconddiv3 {
+            display: block;
+        }
+
+        .img3 {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 45vw;
+            margin-top: 220px;
+            margin-right: 120px;
+            margin-left: 10px;
+        }
+
+        .buttonS3,
+        .buttonS3b {
+            margin-top: 40px;
+            height: 40px;
+            width: 250px;
+            color: white;
+            background-color: #56ACF8;
+            font-size: 17px;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-right: 120px;
+        }
+
+        .buttonS3a,
+        .buttonS3c {
+            margin-top: 40px;
+            height: 40px;
+            width: 250px;
+            color: white;
+            background-color: #56ACF8;
+            font-size: 17px;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .page4 {
+            width: 100vw;
+            height: 210vh;
+            margin-top: 30px;
+        }
+
+        .four1 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .four2 {
+            display: flex;
+        }
+
+        .four2a {
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 260px;
+            padding-top: 100px;
+        }
+
+        .four2b {
+            font-size: 40px;
+            margin-left: 380px;
+            padding-top: 100px;
+            font-weight: bold;
+        }
+
+        .four2c {
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 220px;
+            padding-top: 100px;
+        }
+
+        .four2d {
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 270px;
+            padding-top: 100px;
+        }
+
+        .four3 {
+            display: flex;
+        }
+
+        .four3a {
+            height: 50vh;
+            width: 40vw;
+            background-image: url(agriculture.jpg);
+            margin-top: 40px;
+            margin-left: 110px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .four3button {
+            height: 40px;
+            width: 200px;
+            margin-top: 250px;
+            margin-left: 40px;
+            color: white;
+            background-color: #8D5A9E;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .four3b {
+            display: flex;
+            height: 50vh;
+            width: 40vw;
+            background-image: url(business.jpg);
+            margin-top: 40px;
+            margin-left: 60px;
+            margin-right: 80px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .four5 {
+            display: flex;
+        }
+
+        .four5a {
+            height: 50vh;
+            width: 40vw;
+            background-image: url(disaster.jpg);
+            margin-top: 40px;
+            margin-left: 110px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .four5b {
+            display: flex;
+            height: 50vh;
+            width: 40vw;
+            background-image: url(infra1.jpg);
+            margin-top: 40px;
+            margin-left: 60px;
+            margin-right: 110px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .four6a {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .four7button {
+            height: 40px;
+            width: 200px;
+            margin-top: 250px;
+            margin-left: 45px;
+            color: white;
+            background-color: #8D5A9E;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .four7a {
+            height: 50vh;
+            width: 40vw;
+            background-image: url(telecom.jpg);
+            margin-top: 40px;
+            margin-left: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .page5 {
+            width: 100vw;
+            height: 160vh;
+            margin-top: 340px;
+        }
+
+        .head5 {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .flex5 {
+            display: flex;
+            height: 50vh;
+            width: 100vw;
+        }
+
+        .flex5a {
+            margin-top: 100px;
+            flex-basis: 30%;
+            margin-left: 65px;
+        }
+
+        .flex5b {
+            margin: auto;
+            margin-top: 100px;
+            flex-basis: 40%;
+        }
+
+        .flex5c {
+            margin: auto;
+            margin-top: 100px;
+            flex-basis: 30%;
+            margin-right: 65px;
+        }
+
+        .mgp {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        .mpgm {
+            margin-left: 50px;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .mg {
+
+            margin-left: 200px;
+        }
+
+        .mg1 {
+            margin-left: 140px;
+        }
+
+        .mg2 {
+            margin-left: 130px;
+        }
+
+        .page6 {
+            width: 100vw;
+            height: 80vh;
+        }
+
+        #map {
+            width: 85vw;
+            height: 80vh;
+            margin-left: 110px;
+            margin-right: 100px;
+        }
+
+        #h6 {
+            background-color: #1350a060;
+            height: 150px;
+        }
+
+        .address {
+            display: flex;
+            width: 85vw;
+            height: 25vh;
+            background-color: #373A3C;
+            color: white;
+            margin-left: 110px;
+        }
+
+        #a1 {
+            margin-left: 80px;
+            font-size: 30px;
+            margin-top: 35px;
+            font-weight: bold;
+        }
+
+        #a2 {
+            margin-left: 250px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #loca {
+            margin-left: 250px;
+            margin-top: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #a3 {
+            margin-left: 100px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #gmail {
+            margin-top: 20px;
+            margin-left: 100px;
+            font-weight: bold;
+        }
+
+        #us {
+            margin-left: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-menu {
+                display: none;
+                flex-direction: column;
+                background-color: black;
+                position: absolute;
+                top: 100%;
+                left: 40%;
+                width: 55%;
+                padding: 10px;
+            }
+
+            .navbar {
+                background-color: black;
+            }
+
+            .navbar-menu li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .navbar-menu li:last-child {
+                margin-bottom: 0;
+            }
+
+            .navbar-menu li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .navbar-icon .icon-bar {
+                background-color: #fff;
+                transition: transform 0.3s;
+            }
+
+            .navbar-icon .icon-bar {
+                display: flex;
+                width: 20px;
+                height: 2px;
+                background-color: #fff;
+                margin-bottom: 4px;
+            }
+
+            .expanded .icon-bar:nth-child(1) {
+                transform: rotate(45deg) translate(3px, 5px);
+            }
+
+            .expanded .icon-bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .expanded .icon-bar:nth-child(3) {
+                transform: rotate(-45deg) translate(3px, -5px);
+            }
+
+            .expanded~#navbar-menu {
+                display: flex;
+            }
+
+            .logo {
+                font-size: 25px;
+                color: white;
+                margin-bottom: 2px;
+            }
+        }
+
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+
+            /* Adjust the styles for smaller screens */
+            #home1 {
+                margin-left: 10vw;
+            }
+
+            .firstdiv1 {
+                display: flex;
+                position: sticky;
+                top: 0;
+                width: 100%;
+                background-color: rgba(8, 8, 8, 0.897);
+                margin: 0;
+            }
+
+            .firstdiv1 a {
+                text-decoration: none;
+                color: white;
+            }
+
+            #logo {
+                font-size: 4vw;
+                padding: 2%;
+                color: white;
+                margin-left: 2vw;
+                font-weight: bold;
+            }
+
+            #home {
+                text-decoration: none;
+                margin-left: 2vw;
+                padding: 1%;
+                margin-top: 3vw;
+                font-size: 1.2vw;
+                font-weight: bold;
+            }
+
+            #home1 {
+                text-decoration: none;
+                margin-left: 20vw;
+                padding: 1%;
+                margin-top: 3vw;
+                font-size: 1.2vw;
+                font-weight: bold;
+            }
+
+            .seconddiv1 {
+                background-color: #416bb8;
+                width: 100%;
+                height: 30vh;
+                margin: 0;
+                padding: 0;
+            }
+
+            .matter {
+                margin-left: 5vw;
+            }
+
+            #bulid {
+                color: white;
+                font-size: 1.5vw;
+                padding-top: 8vw;
+                font-weight: bold;
+            }
+
+            #ind {
+                color: white;
+                font-size: 4vw;
+                margin-top: 4vw;
+                font-weight: bold;
+            }
+
+            #ind1 {
+                color: white;
+                font-size: 4vw;
+                font-weight: bold;
+            }
+
+            #an {
+                color: white;
+                font-size: 1.2vw;
+                margin-top: 8vw;
+                word-spacing: 1px;
+                letter-spacing: 1px;
+            }
+
+            #an1 {
+                color: white;
+                font-size: 1.2vw;
+                word-spacing: 1px;
+                letter-spacing: 1px;
+            }
+
+            #button2 {
+                height: 4vw;
+                margin-top: 7vw;
+                width: 16vw;
+                border: none;
+                border-radius: 5px;
+                background-color: #8D5A9E;
+                color: white;
+                font-size: 1.2vw;
+                font-weight: bold;
+            }
+
+            #lastp1 {
+                text-align: center;
+                color: white;
+                font-size: 1.2vw;
+                margin-top: 7vw;
+                font-family: arial;
+                word-spacing: 1px;
+                letter-spacing: 1px;
+            }
+
+            #head2 {
+                text-align: center;
+                margin-top: 8vw;
+                font-size: 4vw;
+                font-weight: bold;
+            }
+
+            #matter2 {
+                text-align: center;
+                margin-top: 4vw;
+                font-size: 1.2vw;
+                word-spacing: 1px;
+                letter-spacing: 1px;
+            }
+
+            .page1 {
+                display: flex;
+                background-color: #416bb8;
+            }
+
+            /* Media Queries
+@media screen and (max-width: 768px) {
+    #home1 {
+        margin-left: 10vw;
+    }
+
+    #animi {
+        height: 30vw;
+        width: 40vw;
+        margin-right: 10vw;
+        margin-top: 8vw;
+    }
+    /* Adjust the styles for smaller screens */
+            .firstdiv1 {
+                justify-content: center;
+            }
+
+            #logo {
+                font-size: 20px;
+                margin-left: 0;
+                text-align: center;
+            }
+
+            #home {
+                margin-left: 0;
+                text-align: center;
+                margin-top: 2vw;
+                font-size: 1.5vw;
+            }
+
+            #home1 {
+                margin-left: 0;
+                text-align: center;
+                margin-top: 2vw;
+                font-size: 1.5vw;
+            }
+
+            .matter {
+                margin-left: 2vw;
+            }
+
+            #bulid {
+                font-size: 15px;
+                padding-top: 5vw;
+            }
+
+            #ind {
+                font-size: 30px;
+                margin-top: 2vw;
+            }
+
+            #ind1 {
+                font-size: 30px;
+            }
+
+            #an {
+                font-size: 15px;
+                margin-top: 4vw;
+            }
+
+            #an1 {
+                font-size: 15px;
+            }
+
+            #button2 {
+                height: 30px;
+                margin-top: 60px;
+                width: 100px;
+                font-size: 15px;
+                border: 0.5px solid rgba(205, 50, 50, 0.521);
+            }
+
+            #button2:hover {
+                border-color: aqua;
+                transform: scale(1.1);
+                transition: 0.3s;
+            }
+
+            #lastp1 {
+                font-size: 1.5vw;
+                margin-top: 4vw;
+            }
+
+            #head2 {
+                margin-top: 4vw;
+                font-size: 5vw;
+            }
+
+            #matter2 {
+                margin-top: 2vw;
+                font-size: 1.5vw;
+            }
+
+            .page1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .seconddiv1 {
+                height: 50vh;
+            }
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .img1 {
+                width: 90%;
+            }
+
+            .seconddiv2 {
+                display: block;
+            }
+
+            .f {
+                font-size: 20px;
+                margin-top: 80px;
+                margin-left: 80px;
+                margin-bottom: 5vh;
+                margin-right: 4vw;
+            }
+
+            .log {
+                position: relative;
+                top: 10px;
+                /* align-items: center; */
+                right: 50px;
+                display: block;
+                height: 100px;
+            }
+
+            #head2 {
+                margin-right: 20px;
+                font-size: 25px;
+            }
+
+            #matter2 {
+                margin-right: 20px;
+                font-size: 15px;
+            }
+
+            #button2 a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .head3 {
+                font-size: 25px;
+                margin-left: 2vw;
+                margin-right: 2vw;
+                margin-top: 5vh;
+                padding-top: 2vh;
+            }
+
+            #subhead3 {
+                font-size: 20px;
+                margin-left: 2vw;
+                margin-top: 3vh;
+            }
+
+            #matter3 {
+                font-size: 15px;
+                margin-left: 2vw;
+                margin-top: 2vh;
+                max-width: 90%;
+            }
+
+            #buttonf3 {
+                height: 25px;
+                width: 150px;
+                font-size: 15px;
+                margin-top: 5vh;
+                margin-left: 2vw;
+            }
+
+            .firstdiv3 {
+                display: block;
+            }
+
+            .seconddiv3 {
+                display: block;
+            }
+
+            .page3 {
+                display: block;
+                height: 120vh;
+            }
+
+            .img3 {
+                display: block;
+                width: 90%;
+                margin-top: 10vh;
+                margin-right: 2vw;
+                margin-left: 2vw;
+            }
+
+            .buttonS3,
+            .buttonS3b,
+            .buttonS3a,
+            .buttonS3c {
+                height: 30px;
+                width: 250px;
+                font-size: 15px;
+                margin-top: 5vh;
+                margin-right: 2vw;
+                margin-left: 70px;
+            }
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .page4 {
+                height: 90vh;
+            }
+
+            .four1 {
+                font-size: 25px;
+                margin-top: 5vh;
+            }
+
+            .four2a,
+            .four2c {
+                font-size: 20px;
+                margin-left: 5vw;
+                padding-top: 5vh;
+            }
+
+            .four2d {
+                font-size: 20px;
+                margin-left: 5px;
+                padding-top: 5vh;
+                margin-right: 5px;
+                padding-right: 20px;
+            }
+
+            .four2b {
+                font-size: 20px;
+                margin-left: 24vw;
+                padding-top: 5vh;
+            }
+
+            .four3a,
+            .four3b {
+                height: 30vh;
+                width: 90%;
+                margin-top: 3vh;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+
+            .four3button,
+            .four7button {
+                height: 9vw;
+                width: 30vw;
+                margin-top: 20vh;
+                margin-left: 2vw;
+                font-size: 12px;
+            }
+
+            .four5a,
+            .four5b {
+                height: 30vh;
+                width: 90%;
+                margin-top: 3vh;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+
+            .four6a {
+                font-size: 20px;
+                padding-top: 5vh;
+            }
+
+            .four7a {
+                height: 30vh;
+                width: 90%;
+                margin-top: 3vh;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .head5 {
+                font-size: 25px;
+                margin-top: 10vh;
+            }
+
+            .page5 {
+                height: 265vh;
+            }
+
+            .flex5a,
+            .flex5b,
+            .flex5c {
+                margin-top: 5vh;
+                flex-basis: 90%;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+
+            .flex5 {
+                display: block;
+            }
+
+            .mgp {
+                font-size: 20px;
+                margin-bottom: 3vh;
+                margin-top: 3vh;
+            }
+
+            .mpgm {
+                margin-left: 2vw;
+                font-size: 15px;
+                margin-right: 1vw;
+            }
+
+            .mg,
+            .mg1,
+            .mg2 {
+                margin-left: 100px;
+                height: 120px;
+            }
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            #map {
+                width: 90vw;
+                height: 50vh;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+
+            #h6 {
+                height: 10vh;
+            }
+
+            .page6 {
+                height: 51vh;
+            }
+
+            .address {
+                height: 40vh;
+                margin-left: 5vw;
+                margin-right: 5vw;
+                width: 90vw;
+                display: block;
+            }
+
+            #a1 {
+                margin-left: 5vw;
+                font-size: 30px;
+                margin-top: 3vh;
+            }
+
+            #a2,
+            #loca,
+            #a3,
+            #gmail,
+            #us {
+                margin-left: 5vw;
+                margin-top: 2vh;
+            }
+        }
+    </style>
+</head>
+
+<body id="body">
+    <nav class="navbar">
+        <div class="logo">
+            <h1>INdgeos</h1>
+        </div>
+        <div class="navbar-icon" id="navbar-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="#body">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#sector">SECTORS</a></li>
+            <li><a href="#aboutu">ABOUT US</a></li>
+            <li><a href="#cont">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div class="page1" id="hom">
+        <div class="seconddiv1" id="hom">
+            <p id="bulid" class="matter">BUILD BETTER.BUILD FASTER.</p>
+            <p id="ind" class="matter">Indgeos Geospatial </p>
+            <p class="matter" id="ind1">Technologies</p>
+            <p id="an" class="matter">An up-and-coming premier provider of GIS</p>
+            <p id="an1" class="matter">mapping services and solutions in India.</p>
+            <button id="button2" class="matter"><a href="#con">Contact Us </a></button>
+        </div>
+    </div>
+    <div class="page2">
+        <div class="firstdiv2">
+            <div class="heading2">
+                <p id="head2">Meet the Indgeos Platform Built for Growth and Scale</p>
+                <p id="matter2">Put the inefficiencies and rigidity of traditional mapping platforms behind you. With
+                    Indgeos, you get a modern <br> mapping solution that’s designed to support movement, scale and
+                    unique business needs.</p>
+            </div>
+            <div class="seconddiv2">
+                <div class="img1">
+                    <img src="f1.jpg" class="log">
+                    <p class="f">35+ Years Experience</p>
+                </div>
+                <div class="img1">
+                    <img src="f2.jpg" class="log">
+                    <p class="f">World Class Services</p>
+                </div>
+                <div class="img1">
+                    <img src="f3.jpg" class="log">
+                    <p id="services"class="f">Connecting the World Geospatially</p>
+                    <!-- <p id="services"></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page3">
+        <div class="firstdiv3">
+            <p class="head3" id="serv"> Services</p>
+            <p id="subhead3">GIS Services</p>
+            <p id="matter3">Our forefront knowledge of data mapping, feature extraction , compilation,<br> information
+                management, and integrating verticals with GIS expertise<br> helps build application-centric solutions
+                for
+                various sectors.</p>
+            <!-- <button id="buttonf3">Speak to Service</button> -->
+        </div>
+        <div class="seconddiv3">
+            <img src="m1.jpg" class="img3" id="image3a">
+            <button class="buttonS3" onclick="change()" id="image3a">Gis services</button>
+            <button class="buttonS3a" onclick="change1()" id="image3a">Remote Sensing</button>
+            <button class="buttonS3b" onclick="change2()" id="image3a">GIS data Management</button>
+            <button class="buttonS3c" onclick="change3()" id='image3a'>Customized GIS solutions</button>
+            <p id="sector"></p>
+        </div>
+    </div>
+    <script src="next.js"></script>
+    <div class="page4">
+        <div class="four1">
+            <p class="four1" id="sect">Sectors</p>
+        </div>
+        <div class="four2">
+            <p class="four2a">Agriculture</p>
+            <p class="four2b">Business Intelligence</p>
+        </div>
+        <div class="four3">
+            <div class="four3a">
+                <button class="four3button" id="a" onclick="nope()">Learn More</button>
+            </div>
+            <div class="four3b">
+                <button class="four3button">Learn More</button>
+            </div>
+        </div>
+        <div class="four2">
+            <p class="four2c">Disaster Management</p>
+            <p class="four2d">Infrastructure</p>
+        </div>
+        <div class="four5">
+            <div class="four5a">
+                <button class="four3button">Learn More</button>
+            </div>
+            <div class="four5b">
+                <button class="four3button">Learn More</button>
+            </div>
+        </div>
+        <div class="four6">
+            <p class="four6a">Telecom</p>
+        </div>
+        <div class="four7">
+            <div class="four7a">
+                <button class="four7button" id="aboutu">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="page5">
+        <div class="head5">
+            <p id="about">About Indgeos Geospatial Technologies</p>
+        </div>
+        <div class="flex5">
+            <div class="flex5a">
+                <img src="mg1.jpg" class="mg1">
+                <p class="mgp">who we are?</p>
+                <p class="mpgm">IndGeos is on its way to establish itself as a leading provider of Geospatial services
+                    and solutions for different user communities in India on the same lines. Founded in 2018, IndGeos
+                    Geospatial Services has had a successful journey in terms of rendering a variety of GIS and Remote
+                    Sensing projects through affordable solutions for a wide range of public and private users.</p>
+            </div>
+            <div class="flex5b">
+                <img src="mg2.jpg" class="mg">
+                <p class="mgp">What we Do?</p>
+                <p class="mpgm">At IndGeos, our USP lies in the special combination of experience, vision, innovative
+                    thinking, and cost effectiveness in one. We aspire to be among the top GIS companies in India,
+                    making our mark in the Geospatial industry through pioneering services and solutions. We specialize
+                    in tackling the most common and pressing spatial challenges with advanced location intelligence,
+                    extracting useful insights from data at hand, and building groundbreaking solutions on the pillars
+                    of sound research and technological advancements from our _ cumulative years of experience working
+                    in the industry. IndGeos also believes in progressing hand-in-hand with advanced technologies like
+                    Big Data analytics, Artificial Intelligence, Machine Learning algorithms, and Remote Sensing
+                    technology to anchor as a crucial foundation on which to build wide-ranging, sector-specific
+                    application-centric solutions for solving the world’s challenges.</p>
+            </div>
+            <div class="flex5c">
+                <img src="mg3.jpg" class="mg2">
+                <p class="mgp">Why Indgeos?</p>
+                <P class="mpgm">With over 30+ years of combined expertise, the GIS and Remote Sensing experts on the
+                    IndGeos team are energetic, passionate, and committed. We are on our way to become established
+                    pioneers in the field of Geospatial data and technologies, offering not just cutting-edge data
+                    processing and visualization services for our wide range of clients from around the world, but also
+                    game-changing applications that address governance, socioeconomic and environmental issues at the
+                    right place and time. Our results-driven culture places information at the centre of all its
+                    decisions and operations, thus benefitting our clients by giving them exactly what they are rooting
+                    for.</P>
+            </div>
+        </div>
+    </div>
+    <div class="page6">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.5064745118275!2d77.08673869005848!3d28.49440593709625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19389303d61b%3A0x68c1c633f29c5297!2s10-A%2C%20DLF%20Cyber%20City%2C%20DLF%20Phase%202%2C%20Sector%2025%2C%20Gurugram%2C%20Haryana%20122008!5e0!3m2!1sen!2sin!4v1688455207844!5m2!1sen!2sin"
+            width="1350vw" id='map' height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    </div>
+    <div class="address" id="cont">
+        <p id="a1">INdgeos</p>
+        <div class="loc">
+            <p id="a2">LOCATION </p>
+            <p id="loca">Level 1 Building 10-A, DLF Cyber City, Phase-II,<br> Gurgaon - 122002, Haryana</p>
+        </div>
+        <div class="email">
+            <p id="a3">MORE INFO</p>
+            <p id="gmail">Email: admin@indgeos.in</p>
+        </div>
+        <div class="social" id="con">
+            <p id="us">GET SOCIAL WITH US</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('navbar-toggle').addEventListener('click', function () {
+            this.classList.toggle('expanded');
+        });
+
+    </script>
+</body>
+
+</html>
